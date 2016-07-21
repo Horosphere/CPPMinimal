@@ -8,6 +8,6 @@ int main(int argc, char* argv[])
 	(void) argc;
 	(void) argv;
 	
-	std::cout << "Orbis, te salute!" << std::endl;
+	std::cout << "Orbis, te saluto!" << std::endl;
 	return 0;
 }
