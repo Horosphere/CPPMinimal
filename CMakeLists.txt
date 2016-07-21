@@ -9,6 +9,9 @@ set(LIBRARY_OUTPUT_PATH    ${CMAKE_BINARY_DIR})
 # Enable C++ 14
 add_compile_options(-std=c++14)
 
+# Enable threading
+find_package(Threads REQUIRED)
+
 # Do not remove the following auto-generated signatures
 
 # Auto-generated. Do not edit. All changes will be undone
@@ -19,3 +22,4 @@ set(SourceFiles
 
 
 add_executable(CPPMinimal ${SourceFiles})
+target_link_libraries(CPPMinimal ${CMAKE_THREAD_LIBS_INIT})

@@ -1,7 +1,7 @@
-
+/*
+ * Entry point for the application
+ */
 #include <iostream>
-#include <thread>
-#include <chrono>
 
 int main(int argc, char* argv[])
 {
