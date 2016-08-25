@@ -6,8 +6,17 @@ set(CMAKE_BINARY_DIR       ${CMAKE_SOURCE_DIR}/bin)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(LIBRARY_OUTPUT_PATH    ${CMAKE_BINARY_DIR})
 
-# Enable C++ 14
-add_compile_options(-std=c++14)
+set(StdFeatures
+	cxx_range_for
+	cxx_noexcept
+	cxx_rvalue_references
+	cxx_override
+	cxx_final
+	cxx_deleted_functions
+	cxx_delegating_constructors
+	cxx_auto_type
+	cxx_constexpr
+	)
 
 # Enable threading
 find_package(Threads REQUIRED)
